@@ -1,13 +1,13 @@
 /* Base */
 * {
-    margin: 0;
+    margin: 10;
     padding: 0;  
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: blue;
     margin: 0;
-    color: white;
+    color: whitesmoke;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,6 +19,7 @@ body {
     padding: 15px;
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    
 }
 .password-wrapper input {
     width: 100%;
@@ -26,6 +27,7 @@ body {
     border-radius: 4px;
     border: 1px solid #cccccc;
     margin: 10px 0px;
+
 }
 .password-wrapper button {
     background-color: #eb0404;
@@ -34,5 +36,43 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+    margin-left: 30px;
+
+}
+
+.form-control {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;;
+    align-items: center;
+   
+}
+.upper2 { 
+    margin-left: 23px  !important;
+}
+#thePassword { 
+    border: solid black;
+}
+#pw{
+    background-color: yellow;
+    color: black;
+}
+
+@media (max-width: 690px) {
+    .btn {
+        font-size: 1rem;
+        margin: 16px 0px 0px 0px;
+        padding: 10px 15px;
+    }
+
+    #password {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn {
+        font-size: 0.8rem;
+    }
 }

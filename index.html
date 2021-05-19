@@ -13,8 +13,31 @@
     <!-- The Password Wrapper -->
     <div class="password-wrapper">
         <p>Generate A Password</p>
-        <input type="text" placeholder="Enter Password" id="password" />
-        <button type="button">Generate Password</button>
+        <div id="thePassword">Password: <span id='pw'></span></div>
+        <!-- <input type="text" placeholder="Enter Password" id="pw" /> -->
+        <div class="pw-body">
+            <div class="form-control">
+                <label for="len">Password Length </label>
+                <input class="upper" id="len" value="8" type="number" min="2" max="30" />
+            </div>
+            <div class="form-control">
+                <label for="len">Uppercase Letters </label>
+                <input id="upper" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="len">Lowercase Letters </label>
+                <input id="lower" type="checkbox" />
+            </div>
+            <div class="form-control">
+                <label for="len">Numbers </label>
+                <input class="upper2" id="number" type="checkbox" />
+                </div>
+            <div class="form-control">
+                <label for="len">Symbols </label>
+                <input class="upper2" id='symbol' type="checkbox" />
+            </div>
+        </div>
+        <button id="genBtn" type="button">Generate Password</button>
     </div> <!-- End Wrapper -->
 </body>
 </html>
